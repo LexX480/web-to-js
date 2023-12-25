@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .bx {
+
+        max-width: 450px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        /* repeat(3,100px) */
+        grid-template-rows: 100px 50px;
+      }
+
+      .bx1 {
+        background-color: red;
+        grid-row: 1/2;
+        grid-column: 2/3;
+      }
+
+      .bx2 {
+        background-color: goldenrod;
+      }
+
+      .bx3 {
+        background-color: purple;
+      }
+
+      .bx4 {
+        background-color: chocolate;
+      }
+
+      .bx5 {
+        background-color: rgb(9, 255, 0);
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="bx">
+
+      <div class="bx1">
+        <p>Box1</p>
+      </div>
+      <div class="bx2">
+        <p>Box2</p>
+      </div>
+      <div class="bx3">
+        <p>Box3</p>
+      </div>
+      <div class="bx4">
+        <p>Box4</p>
+      </div>
+      <div class="bx5">
+        <p>Box5</p>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+  </body>
+
+</html>

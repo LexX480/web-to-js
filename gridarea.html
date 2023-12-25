@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .bx {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: "head head head head"
+          "maincontent maincontent sidebar sidebar" "subcontent subcontent sidebar sidebar" "footer footer footer footer";
+
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      li {
+        list-style-position: inside;
+      }
+
+      .item {
+        background-color: yellow;
+        border: 1px solid black;
+
+      }
+
+      .head {
+        grid-area: head;
+      }
+
+      .main-co {
+        grid-area: maincontent;
+      }
+
+      .sub-co {
+        grid-area: subcontent;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bx">
+      <div class="head item">
+        <h1>Header</h1>
+      </div>
+      <div class="main-co item">
+        <h1>main</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, repudiandae.</p>
+
+      </div>
+      <div class="sub-co item">
+        <h1>sub</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ratione?</p>
+
+      </div>
+      <div class="sidebar item">
+        <ol>
+          <li>about</li>
+          <li>contact</li>
+          <li>socials</li>
+        </ol>
+
+      </div>
+      <div class="footer item">
+        <h4>By someone</h4>
+        <p>All rights reserved
+
+        </p>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
